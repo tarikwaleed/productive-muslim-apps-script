@@ -1,0 +1,22 @@
+{
+  "name": "productive-muslim-apps-script",
+  "version": "1.0.0",
+  "description": "Google Calendar Extension to automate the creation of prayers times events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarikwaleed/productive-muslim-apps-script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarikwaleed/productive-muslim-apps-script/issues"
+  },
+  "homepage": "https://github.com/tarikwaleed/productive-muslim-apps-script#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.56"
+  }
+}
