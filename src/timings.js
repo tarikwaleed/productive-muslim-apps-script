@@ -50,9 +50,14 @@ function populateEvents(params) {
     dayPrayers += 5;
   }
 }
-function test() {
-  // var startDate = new Date(2023, 0, 1, 15, 55);
-  // var endDate = new Date(startDate.getTime() + 30 * 60000);
-  // Logger.log(startDate);
-  // Logger.log(endDate);
+function deletePopulatedEvents(params) {
+  var startDate = new Date(2023, 0, 1);
+  var endDate = new Date(2023, 0, 31);
+  var events = CalendarApp.getDefaultCalendar().getEvents(
+    startDate,
+    endDate
+  );
+  events.forEach((element) => {
+    element.deleteEvent();
+  });
 }
