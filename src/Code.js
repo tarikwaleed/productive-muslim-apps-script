@@ -62,10 +62,6 @@ function deletePopulatedEvents(params) {
 function doGet(params) {
   return HtmlService.createTemplateFromFile("index").evaluate();
 }
-function sayHello(){
-  console.log("hello")
-}
-
 function include(filename) {
   return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }

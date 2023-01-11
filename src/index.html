@@ -8,18 +8,17 @@
     <?!= include('styles'); ?>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, numquam
-      velit in tenetur odit nesciunt deserunt dicta sequi blanditiis laborum
-      delectus! Quae quam omnis iure consectetur aliquam fugiat expedita velit.
-    </p>
-    <button onClick="google.script.run.deletePopulatedEvents()">
-      Delete Events
-    </button>
-    <button onClick="google.script.run.populateEvents()">
-      Populate Events
-    </button>
-
+    <div class="card">
+      <button
+        id="populateBtn"
+        onClick="google.script.run.deletePopulatedEvents()"
+      >
+        Delete Events
+      </button id="deleteBtn">
+      <button onClick="google.script.run.populateEvents()">
+        Populate Events
+      </button>
+    </div>
     <?!= include('javascript'); ?>
   </body>
 </html>
