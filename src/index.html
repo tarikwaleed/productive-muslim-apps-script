@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <?!= include('styles'); ?>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, numquam
+      velit in tenetur odit nesciunt deserunt dicta sequi blanditiis laborum
+      delectus! Quae quam omnis iure consectetur aliquam fugiat expedita velit.
+    </p>
+    <button onClick="google.script.run.deletePopulatedEvents()">
+      Delete Events
+    </button>
+    <button onClick="google.script.run.populateEvents()">
+      Populate Events
+    </button>
+
+    <?!= include('javascript'); ?>
+  </body>
+</html>

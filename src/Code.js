@@ -52,12 +52,20 @@ function populateEvents(params) {
 }
 function deletePopulatedEvents(params) {
   var startDate = new Date(2023, 0, 1);
-  var endDate = new Date(2023, 0, 31);
-  var events = CalendarApp.getDefaultCalendar().getEvents(
-    startDate,
-    endDate
-  );
+  var endDate = new Date(2023, 1, 1);
+  var events = CalendarApp.getDefaultCalendar().getEvents(startDate, endDate);
   events.forEach((element) => {
     element.deleteEvent();
   });
+}
+
+function doGet(params) {
+  return HtmlService.createTemplateFromFile("index").evaluate();
+}
+function sayHello(){
+  console.log("hello")
+}
+
+function include(filename) {
+  return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }
