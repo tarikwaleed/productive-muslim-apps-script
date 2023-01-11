@@ -1,6 +1,15 @@
 <script>
-  window.addEventListener("load", function () {
-    console.log("Page is loaded");
-  });
+  document.getElementById("populate-btn").addEventListener("click", () => {
+    document.getElementById(
+      "paragraph"
+    ).innerHTML = `Events Created Successfully`;
+    google.script.run.populateEvents()
+  })
+  document.getElementById("delete-btn").addEventListener("click", () => {
+    document.getElementById(
+      "paragraph"
+    ).innerHTML = `Events Deleted Successfully`;
+    google.script.run.deletePopulatedEvents()
+  })
 
 </script>

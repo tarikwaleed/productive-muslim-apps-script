@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <?!= include('styles'); ?>
-  </head>
-  <body>
-    <div class="card">
-      <button
-        id="populateBtn"
-        onClick="google.script.run.deletePopulatedEvents()"
-      >
-        Delete Events
-      </button id="deleteBtn">
-      <button onClick="google.script.run.populateEvents()">
-        Populate Events
-      </button>
-    </div>
-    <?!= include('javascript'); ?>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <?!= include('styles'); ?>
+</head>
+
+<body>
+  <div class="headers">
+    <h1>Productive Muslim</h1>
+    <h2>Organize Your Calendar using the Time Blocking Technique</h2>
+
+  </div>
+  <div class="card">
+    <button id="delete-btn" onClick="google.script.run.deletePopulatedEvents()">
+      Delete Events
+    </button>
+    <button id="populate-btn" onClick="google.script.run.populateEvents()">
+      Create Events
+    </button>
+  </div>
+  <p id="paragraph"></p>
+  <?!= include('javascript'); ?>
+</body>
+
 </html>
